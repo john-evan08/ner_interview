@@ -1,0 +1,13 @@
+batch_size: 8
+embedding_dim: 50
+hidden_dim: 64
+num_epochs: 5
+learning_rate: 0.001
+log_dir: "runs"
+model_path: "models/best_model.pth"
+word2idx_path: "data/word2idx.json"
+tag2idx_path: "data/tag2idx.json"
+train_url: "https://huggingface.co/api/datasets/tner/conll2003/parquet/conll2003/train/0.parquet"
+valid_url: "https://huggingface.co/api/datasets/tner/conll2003/parquet/conll2003/validation/0.parquet"
+test_url: "https://huggingface.co/api/datasets/tner/conll2003/parquet/conll2003/test/0.parquet"
+test_save_path: "test/test_metrics.csv"
